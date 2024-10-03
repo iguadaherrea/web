@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+
+}   
+body {
+
+   background-color: rgb(29, 29, 29);
+    padding: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+  
+
+
+
+}
+
+.container-all {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container-form {
+    width: 80%;
+    padding: 40px;
+   background-image: url(portada.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+    
+}
+form {
+    position: relative;
+}
+.logo{
+    position: relative;
+}
+h1{
+    position: relative;
+}
+.capa{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        90deg, 
+        rgb(183, 118, 243)25%,
+        rgb(252, 147, 243) 100%);
+    opacity: 0.8;
+
+
+}
+
+.logo{
+    width: 150px;
+    display: block;
+    margin: auto;
+
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 20px;
+   
+    color: #2b2323;
+
+}
+label {
+    display: block; /* DA FORMATO DE BLOQUE Y COLOCA UNO POR LÍNEA*/
+    margin-top: 30px;
+    font-size: 20px;
+    
+    color: #2b2323;
+}
+
+input[type="text"],input[type="password"]{
+    width:100%;
+    height: 30px;
+    background: rgb(218, 215, 215);
+    outline: 0px;
+    color:#220115;
+    font-size: 16px;
+
+}
+input[type="submit"]{
+   width: 100%;
+   height: 50px;
+   margin-top: 60px;
+   color:white;
+   border:0px;
+   background: black;
+   box-shadow: 0 0 20px rgba(192,203,251,0.7) ;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+  
+}
+input[type="submit"]:hover{ 
+    background-color: #97065d;
+    
+
+}
+
+.text-footer{
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    color:#2b2323;
+    position: relative;
+
+}
+
+.text-footer a{
+
+    color: #97065d;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+/*LADO TEXTO*/
+.container-img{
+    width: 100%;
+    background-image: url(portada.png);
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+
+}
+
+/*TEXTO DE ERROR*/
+
+.msj_error {
+    color: #220115;
+    display: block;
+    margin-top: 10px;
+}
+/*RESPONSIVE*/
+
+@media screen and (max-width: 700px) {
+    .container-img {
+        display: none;
+    }
+    .container-form {
+        margin: auto;
+        width: 100%;
+    }
+}
+    

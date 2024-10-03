@@ -1,0 +1,281 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #070707
+
+}
+
+header {
+    background-color: #d6d1d1;
+    font-family: "Josefin Sans", sans-serif; 
+    
+}
+
+.concepto {
+    margin-top: 8%;
+    
+
+}
+.concepto h2 {
+    color: rgb(240, 97, 240);
+     font-family: "Josefin Sans", sans-serif;
+    font-size: 3em;
+}
+
+.concepto p {
+    color: #d6d1d1;
+    text-align: justify;
+    font-family: "Josefin Sans", sans-serif;
+}
+.pasos h2{
+    font-family: "Josefin Sans", sans-serif;
+    color: #d6d1d1;
+    font-size: 3em;
+
+}
+
+.tips {
+    margin: 5%;
+    
+    
+}
+
+
+
+/*Style trajetas giratorias*/
+
+section.pasos{
+   
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "Josefin Sans", sans-serif;
+    
+}
+.tarjetas {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 25px;
+
+}
+
+.tarjetas .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.tarjetas .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+
+.tarjetas .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjetas .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fcf6f6;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+    font-size: larger;
+  
+}
+
+.tarjetas .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #d6d1d1;
+    padding: 15px;
+    color: #030303;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px #000;
+}
+
+
+
+.tarjetas .back p {
+    letter-spacing: 1px;
+    text-align: justify;
+} 
+
+.tarjetas:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.tarjetas:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*Quiz RUTINA*/
+.quizz {
+    
+    padding-top: 2%;
+    padding-left: 10%;
+    background-image: url(off.jpg);
+    font-family: "Josefin Sans", sans-serif; 
+
+    
+  
+}
+h1 {
+   
+    
+    font-size: 3em;
+
+
+}
+form{
+    
+    font-size: 2em;
+}
+
+#enviar{
+    background-color:#d6d1d1  ;
+    color: #080808;
+    border-color: #d6d1d1;
+    font-size: 25px;
+    margin-left: 8%;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+   
+    
+}
+#enviar:hover{
+    background-color:rgb(8, 8, 8) ;
+    color: #fcf6f6;
+}
+#resultado {
+    
+    margin-top: 2%;
+    
+}
+
+/*IMC*/
+
+
+.fondo {
+  background-image: url(imc.jpg);
+}
+
+ .card {
+  font-family: "Josefin Sans", sans-serif ;
+ }
+.caja {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif; 
+  text-align: center;
+  background-color: #080808;
+  color: #fcf6f6;
+  width: 400px;
+  height: 620px;
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 60px;
+  border-style: groove;
+  border-width: 10px ;
+  border-color: #d6d1d1;  
+
+}
+
+input[type="number"]{
+
+  padding: 10px;
+  border: 3px solid rgb(53, 53, 53) ;
+}
+button {
+  background-color:#444343 ;
+  color: #d6d1d1;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 20px;
+
+}
+#result {
+  font-weight: bold;
+  color: #fcf6f6;
+  font-family: "Josefin Sans", sans-serif ;
+  font-size: 15px;
+
+}
+
+table {
+  margin-top: 5%;
+  margin-left: 25%;
+  border-collapse: collapse;
+}
+
+th,td {
+  padding: 2px;
+  border: 2px solid #444343 ;
+
+
+}
+
+th {
+  background-color: antiquewhite;
+  color: #000;
+}
+@media (max-width: 760px) {
+    
+    .concepto {
+      font-size: 20px;
+     text-align: justify;
+     padding-left: 10%;
+
+
+  }      
+
+ 
+    .quizz {
+      padding-top: 10%;
+      padding-left: 20%;
+    }
+    .quizz h1 {
+      font-size: 25px ;
+    }
+    form {
+      font-size: 15px;
+    }
+
+  .pasos {
+    flex-direction: column;
+
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  .col-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .tips h3 {
+    font-size: 20px;
+  }
+
+  }
+
+  
